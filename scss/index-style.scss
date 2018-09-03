@@ -11,6 +11,10 @@
     }
 }
 
+h3 {
+    margin-bottom: 20px;
+}
+
 h4 {
     font-weight: 200;
 }
@@ -31,6 +35,14 @@ h5 {
     }
 }
 
+.index-img {
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
 .nav-bar {
     position: fixed;
     top: 0;
@@ -46,3 +58,8 @@ h5 {
 .content {
     margin-top: 140px;
 }
+
+body {
+    padding-bottom: 80px;
+}
+
