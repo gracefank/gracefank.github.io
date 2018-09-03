@@ -140,5 +140,7 @@ html {
 @media (max-width: 767px) {
   .hidden-sm {
     display: none !important; } }
+.about-img {
+  width: 100%; }
 
 /*# sourceMappingURL=index-style.css.map */
