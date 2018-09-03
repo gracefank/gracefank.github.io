@@ -104,4 +104,17 @@ html {
   .no-style:focus, .no-style:active {
     border: none; }
 
+.my-menu h1 {
+  font-weight: 300;
+  font-size: 16px; }
+.my-menu h2 {
+  font-size: 16px;
+  padding: 2px 0;
+  margin: 6px 0; }
+  .my-menu h2 a {
+    color: #555; }
+    .my-menu h2 a:hover {
+      text-decoration: none;
+      border-bottom: 4px solid #ba5d6d; }
+
 /*# sourceMappingURL=index-style.css.map */
