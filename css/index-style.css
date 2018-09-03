@@ -5,7 +5,7 @@ h1 a {
     color: black;
     transition: 0.5s; }
 h1 h4 {
-  font-weight: 100; }
+  font-weight: 200; }
 
 h2, h3 {
   color: #555; }
@@ -16,22 +16,29 @@ h3 {
 .thinner, p {
   font-weight: 300; }
 
+h4 a {
+  color: #333; }
+  h4 a:hover {
+    text-decoration: none; }
+
 h5 {
   display: inline; }
   h5 a {
-    margin-right: 24px;
+    margin-left: 20px;
     text-transform: uppercase;
-    color: #5d5d5d;
-    padding-bottom: 4px; }
+    color: #5d5d5d; }
     h5 a:hover {
       color: black;
       text-decoration: none;
       transition: 0.5s; }
 
+p {
+  letter-spacing: 0.5px; }
+
 .highlight {
   background-image: linear-gradient(to right, transparent 50%, yellow 50%);
   background-origin: 0;
-  background-size: 200% 55%;
+  background-size: 200% 50%;
   background-repeat: repeat-x;
   background-position: 0 100%;
   transition: background-position 0.5s; }
@@ -82,7 +89,7 @@ h5 {
 
 .footer {
   margin-top: 80px;
-  background-color: #fff7fa;
+  margin-bottom: 30px;
   padding: 10px 10px 0px; }
   .footer h5 a, .footer p {
     color: #777; }
@@ -104,17 +111,34 @@ html {
   .no-style:focus, .no-style:active {
     border: none; }
 
-.my-menu h1 {
-  font-weight: 300;
-  font-size: 16px; }
-.my-menu h2 {
-  font-size: 16px;
-  padding: 2px 0;
-  margin: 6px 0; }
-  .my-menu h2 a {
-    color: #555; }
-    .my-menu h2 a:hover {
-      text-decoration: none;
-      border-bottom: 4px solid #ba5d6d; }
+.my-menu {
+  position: fixed; }
+  .my-menu h1 {
+    font-weight: 300;
+    font-size: 16px; }
+  .my-menu h2 {
+    font-size: 16px;
+    padding: 2px 0px;
+    margin: 6px 0; }
+    .my-menu h2 a {
+      color: #555;
+      padding-right: 8px; }
+      .my-menu h2 a:hover {
+        text-decoration: none;
+        color: black; }
+
+.underline-text {
+  border-top: 1px solid #eee;
+  padding-top: 5px; }
+  .underline-text h6 {
+    display: inline;
+    text-align: left;
+    font-weight: 400;
+    color: #999;
+    margin-left: -10px; }
+
+@media (max-width: 767px) {
+  .hidden-sm {
+    display: none !important; } }
 
 /*# sourceMappingURL=index-style.css.map */
