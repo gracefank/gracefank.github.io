@@ -3,7 +3,8 @@
         color: #5d5d5d;
         &:hover {
             text-decoration: none;
-            color: #5d5d5d;
+            color: black;
+            transition: 0.5s;
         }
     }
     h4 {
@@ -16,22 +17,34 @@ h3 {
 }
 
 h4 {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 h5 {
     display: inline;
     a {
         margin-right: 24px;
-        padding-bottom: 4px;
-        transition: 0.3s;
         text-transform: uppercase;
         color: #5d5d5d;
+        padding-bottom: 4px;
         &:hover {
+            color: black;
             text-decoration: none;
-            border-bottom: 5px solid #ba5d6d;
-            color: #ba5d6d;
+            transition: 0.5s;
         }
+
+    }
+}
+
+.highlight {
+    background-image: linear-gradient(to right, transparent 50%, yellow 50%);
+        background-origin: 0;
+        background-size: 200% 55%;
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        transition: background-position 0.5s;
+    &:hover {
+        background-position: -100% 100%;
     }
 }
 
@@ -59,7 +72,16 @@ h5 {
     margin-top: 140px;
 }
 
-body {
-    padding-bottom: 80px;
+.margin {
+    padding-top: 80px;
 }
 
+.footer {
+    margin-top: 80px;
+    background-color: #eeeeee;
+    padding: 10px 10px 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
