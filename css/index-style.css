@@ -141,6 +141,18 @@ html {
   .hidden-sm {
     display: none !important; } }
 .about-img {
+  padding: 30px;
   width: 100%; }
+
+.howdy {
+  color: #555; }
+  .howdy:before {
+    content: "Hi"; }
+  .howdy:hover {
+    text-decoration: none; }
+  .howdy:hover:before {
+    transition: 0.3s;
+    content: "Howdy";
+    color: #800000; }
 
 /*# sourceMappingURL=index-style.css.map */
