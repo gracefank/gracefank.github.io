@@ -155,4 +155,19 @@ html {
     content: "Howdy";
     color: #800000; }
 
+.blue {
+  color: #4285F4; }
+
+.red {
+  color: #EA4335; }
+
+.yellow {
+  color: #fbbc05; }
+
+.green {
+  color: #34a853; }
+
+.blue:hover, .red:hover, .yellow:hover, .green:hover {
+  text-decoration: none; }
+
 /*# sourceMappingURL=index-style.css.map */

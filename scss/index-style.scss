@@ -210,3 +210,26 @@ html {
         color: #800000;
     }
 }
+
+.blue { 
+    color: #4285F4; 
+    @extend %googley;
+}
+.red { 
+    color: #EA4335; 
+    @extend %googley;  
+}
+.yellow { 
+    color: #fbbc05; 
+    @extend %googley;
+}
+.green { 
+    color: #34a853; 
+    @extend %googley;
+}
+
+%googley {
+    &:hover{
+        text-decoration: none;
+    }
+}
