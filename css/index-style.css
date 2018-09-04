@@ -170,4 +170,12 @@ html {
 .blue:hover, .red:hover, .yellow:hover, .green:hover {
   text-decoration: none; }
 
+.pardon {
+  position: fixed;
+  z-index: 2;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: white;
+  border: 10px solid #eee; }
+
 /*# sourceMappingURL=index-style.css.map */
