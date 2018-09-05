@@ -48,8 +48,10 @@ h5 {
     }
 }
 
-p {
+p, li {
     letter-spacing: 0.5px;
+    font-weight: 400px !important;
+    font-size: 16px;
 }
 
 .highlight {
@@ -187,7 +189,7 @@ html {
 
 @media (max-width: 767px) {
   .hidden-sm {
-    display: none !important;
+    position: static !important;
   }
 }
 

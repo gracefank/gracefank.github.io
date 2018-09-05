@@ -32,8 +32,10 @@ h5 {
       text-decoration: none;
       transition: 0.5s; }
 
-p {
-  letter-spacing: 0.5px; }
+p, li {
+  letter-spacing: 0.5px;
+  font-weight: 400px !important;
+  font-size: 16px; }
 
 .highlight {
   background-image: linear-gradient(to right, transparent 50%, yellow 50%);
@@ -139,7 +141,7 @@ html {
 
 @media (max-width: 767px) {
   .hidden-sm {
-    display: none !important; } }
+    position: static !important; } }
 .about-img {
   padding: 30px;
   width: 100%; }
