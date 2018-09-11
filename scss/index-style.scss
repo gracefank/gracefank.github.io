@@ -78,20 +78,6 @@ p, li {
     }
 }
 
-.index-img-2 {
-    img {
-        height: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 5px;
-    }
-    padding: 20px;
-    &:hover {
-        transform: scale(1.2);
-        transition: 0.3s;
-    }
-}
-
 .separator {
     border-bottom: 1px solid #ddd;
     padding: 40px 5px 0px;
@@ -243,4 +229,38 @@ html {
     font-weight: 600;
     background-color: white;
     border: 10px solid #eee;
+}
+
+.figure {
+    @extend %figure;
+    img {
+        width: 100%;
+    }
+    h6 {
+        text-align: center;
+    }
+}
+
+.figure-sm {
+    @extend %figure;
+    img {
+        width: 50%;
+    }
+    h6 {
+        padding-left: 20px;
+        display: inline;
+        text-align: right;
+        vertical-align: bottom;
+    }
+}
+
+%figure {
+    margin: 20px 0px 40px;    
+    img {
+        margin: 0;
+    }
+    h6 {
+        font-style: italic;
+        font-weight: 400;
+    }
 }
