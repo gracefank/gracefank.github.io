@@ -70,7 +70,8 @@ p, li {
   background-color: white; }
 
 .nav {
-  margin-top: 36px; }
+  margin-top: 36px;
+  text-align: right; }
 
 .content {
   margin-top: 140px; }
