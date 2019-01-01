@@ -1,210 +1,192 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Grace Fan's Portfolio</title>
-    <meta charset="utf-8">
+	<title>Grace Fan</title>
+    
+    <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index-style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="includes.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+
 <body>
-    <div class="container-fluid">
-        <div class="row nav-bar sticky">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="col-sm-8">
-                    <h1><a href="index.html" class="highlight">Grace Fan</a></h1>
-                </div>
-                <div class="col-sm-4 nav">
-                    <h5><a href="#work" class="highlight">Work</a></h5>
-                    <h5><a href="#design" class="highlight">Design</a></h5>
-                    <h5><a href="#about" class="highlight">About</a></h5>
-                </div>
-            </div>
-        </div>  
 
-        <div class="col-sm-8 col-sm-offset-2">
-            <div class="row">
-                <div class="col-sm-7 content">
-                    <h2>
-                        <a class="howdy"></a>, I'm Grace!
-                    </h2>
-                    <br>
-                    <h4 class="thinner">
-                        I am a junior Computer Science major and Art minor at Texas A&M University.
-                        My interests lie in User Experience and Product Design.
-                    </h4>
-                    <h4>I will be uploading content all throughout this week, so check back for updates!</h4>
-                </div>
-            </div>
+<div class="container">
+	<div class="row navbar-cust">
+		<div class="col-lg-2 offset-lg-1">
+			<a href="#top" class="home-link">Grace Fan</a>
+		</div>
+		<div class="col-lg-5 offset-lg-3" style="text-align:right;">
+			<li><a href="#projects" class="highlight">Projects</a></li>
+			<li><a href="#illustrations" class="highlight">Illustrations</a></li>
+			<li><a href="#about" class="highlight">About</a></li>
+		</div>
+	</div>	
+</div>
 
-            <a name="work"></a>
-            <div class="row margin">
-                <div class="col-sm-4">
-                    <h3>Current Work</h3>
+<a name="top"></a>
+<div class="container">
+	<div class="row intro" style="margin-top: 150px">
+		<div class="col-lg-10 offset-lg-1">
+			<h1>Hi, I'm Grace!</h1> 
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-5 offset-lg-1">
+	  		<p>I am a third-year Computer Science major and Art minor at Texas A&M University.</p> 	
+	  		<p>Currently seeking a Fall 2019 internship in UX Design.</p>
+		</div>
+		<div class="col-lg-4 offset-lg-2">
+			<div class="job-title">
+				<h3>Current Design Director</h3>
+				<a href="#">@ TAMUhack</a>
+			</div>
+			<div class="job-title">
+				<h3>Incoming UX Design Intern</h3>
+				<a href="#">@ Credera</a>
+			</div>
+			<div class="job-title">
+				<h3>Former UX Design Intern</h3>
+				<a href="#">@ Sandia National Labs</a>
+			</div>
+		</div>
+	</div>
+</div>
 
-                    <a href="project/tamuhack.html"><img src="assets/index-tamuhack.png" class="index-img"></a>
-                    <h4><a href="project/tamuhack.html">TAMUhack</a></h4>
-                    <p>Design Director in charge of website, graphics, and branding design</p>
-                </div>
-            </div>
+<a name="projects"></a>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 offset-lg-1 section-br">
+		</div>
+	</div>
+</div>
 
-            <div class="row margin">
-                <div class="col-sm-4">
-                    <h3>Past Work</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="project/sandia.html"><img src="assets/index-sandia.png" class="index-img"></a>
-                    <h4><a href="project/sandia.html">Sandia National Labs</a></h4>
-                    <p>UX Design intern working on high-fidelity prototypes and web design</p>
-                </div>
-                <div class="col-sm-4">
-                    <a href="project/google.html"><img src="assets/index-android.svg" class="index-img"></a>
-                    <h4><a href="project/google.html">Google CodeU</a></h4>
-                    <p>Student in 12-week web application development program</p>
-                </div>
-                <div class="col-sm-4">
-                    <a href="project/bitgrange.html"><img src="assets/index-bitgrange.svg" class="index-img"></a>
-                    <h4><a href="project/BitGrange.html">BitGrange</a></h4>
-                    <p>Full-stack developer and designer for an iOS mobile application</p>
-                </div>
-              </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="project/samaritan.html"><img src="assets/index-samaritan.svg" class="index-img"></a>
-                    <h4><a href="project/samaritan.html">Samaritan Web App</a></h4>
-                    <p>UI designer for a hackathon web application project in Node.js</p>
-                </div>
-                <div class="col-sm-4">
-                    <a href="project/chillennium.html"><img src="assets/index-chillennium.png" class="index-img"></a>
-                    <h4><a href="project/chillennium.html">Chillenium Game Jam</a></h4>
-                    <p>Animator and game developer for a side-scroller game developed in Unity</p>
-                </div>
-            </div>
+<div class="container"> 
+	<div class="row intro">
+		<div class="col-lg-10 offset-lg-1">
+			<h1>Projects</h1>
+		</div>
+	</div>
 
-            <a name="design"></a>
+	<div class="row project-card">  <!--Tamuhack-->
+		<div class="col-lg-4 offset-lg-1">
+			<h5>Extracurricular</h5>
+			<h2>TAMUhack</h2>
+			<p>A team that organises Texas A&M’s largest annual hackathon.</p>
+			<a href="projects/tamuhack.html">Read More »</a>
+		</div>
+		<div class="col-lg-4 offset-lg-2 right-align">
+			<h5>Internship</h5>
+			<h2>Sandia National Laboratories</h2>
+			<p>A research and development laboratory focused on nuclear and national security.</p>
+			<a href="projects/sandia.html">Read More »</a>
+		</div>
+		<!-- <div class="col-lg-6 img-box">
+		</div> -->
+	</div>
+<!-- 
+	<div class="row project-card right-align"> Sandia
+		<div class="col-lg-5 offset-lg-1">
+		</div>
+		
+	</div> -->
+<br>
+	<div class="row project-card">  <!--Google CodeU-->
+		<div class="col-lg-4 offset-lg-1">
+			<h5>Internship</h5>
+			<h2>Google CodeU</h2>
+			<p>An online mentorship program where I learned to develop a web application.</p>
+			<a href="projects/google.html">Read More »</a>
+		</div>
+		<div class="col-lg-4 offset-lg-2 right-align">
+			<h5>Research &amp; Design</h5>
+			<h2>BitGrange</h2>
+			<p>BitGrange is an IoT startup and research project at Texas A&M University.</p>
+			<a href="projects/bitgrange.html">Read More »</a>
+		</div>
+	</div>
 
-            <div class="row margin">
-                <div class="col-sm-12 separator">
-                </div>
-            </div>  
+	<!-- <div class="row project-card right-align"> BitGrange
+		<div class="col-lg-5 offset-lg-1">
+		</div>
+		
+	</div> -->
+</div>
 
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3>Design</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <button data-toggle="modal" data-target="#portrait" class="no-style">
-                        <img src="assets/portrait-graphic.png" class="index-img">
-                    </button>                    
-                    <h4>Portrait Design (WIP)</h4>
-                    <p>Sept. 2018</p>
-                </div>
+<a name="illustrations"></a>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 offset-lg-1 section-br">
+		</div>
+	</div>
+</div>
 
-                <div class="col-sm-4">
-                    <button data-toggle="modal" data-target="#carnivale" class="no-style">
-                        <img src="assets/carnivale-poster.png" class="index-img">
-                    </button>                    
-                    <h4>Carnivale Posters</h4>
-                    <p>Nov. 2017</p>
-                </div>
+<div class="container""> 
+	<div class="row intro">
+		<div class="col-lg-10 offset-lg-1">
+			<h1>Illustrations</h1>
+		</div>
+	</div>
+	<div class="row illustration-row">
+		<div class="col-lg-3 offset-lg-1">
+			<img src="assets/stamp.png">
+			<p>Fall 2017 | Adobe Illustrator</p>
+		</div>
+		<div class="col-lg-3">
+			<img src="assets/carnivale-poster.png">
+		</div>
+		<div class="col-lg-3">
 
-                 <div class="col-sm-4">
-                    <button data-toggle="modal" data-target="#stamps" class="no-style"><img src="assets/stamp.png" class="index-img"></button>
-                    <h4>Japanese Stamps</h4>
-                    <p>Sept. 2017</p>
-                </div>
-            </div>
+		</div>
+	</div>
+</div>
 
-            <div class="row">
-                <div class="col-sm-12 separator">
-                </div>
-            </div>  
 
-            <a name="about"></a>
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3>About</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-7">
-                    <h2>"If you have a problem, turn it into a project." &#8212; An inspirational 
-                        <a class="blue">G</a><a class="red">o</a><a class="yellow">o</a><a class="blue">g</a><a class="green">l</a><a class="red">e</a><a class="yellow">r</a>
-                    </h2>
-                    <br>
-                    <p>This portfolio is a culmination of all the problems I have turned into projects and make me feel passionate about what I do and can do for my community.</p> 
-                    <p>I am a full-time student at Texas A&M University and part-time designer. I spend my time as the Design Director for TAMUhack and captain of our volleyball team, TAMUwhack. I love travelling around the world and have the sweetest Shetland Sheepdog as my companion.
-                    </p>
-                </div>
-                <div class="col-sm-4 col-sm-offset-1">
-                    <img src="assets/about-photo.png" class="about-img">
-                </div>
-            </div>
+<a name="about"></a>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 offset-lg-1 section-br">
+		</div>
+	</div>
+</div>
+
+<div class="container"> 
+	<div class="row intro">
+		<div class="col-lg-10 offset-lg-1">
+			<h1>About</h1>
+		</div>
+	</div>
+	<div class="row">
+        <div class="col-lg-6 offset-lg-1">
+            <h3 style="font-family: AvenirNext-DemiBold">"If you have a problem, turn it into a project."</h3>
+            <br>
+            <p>This portfolio is a culmination of all the problems I have turned into projects and make me feel passionate about what I do and can do for my community.</p> 
+            <p>I am a full-time student at Texas A&M University and part-time designer. I spend my time as the Design Director for TAMUhack and captain of our volleyball team, TAMUwhack.</p>
+        </div>
+        <div class="col-lg-3 offset-lg-1">
+            <img src="assets/about-photo.png" class="illustration-img">
         </div>
     </div>
-
-        <div id="stamps" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <img src="assets/stamp.png">
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div id="carnivale" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <img src="assets/carnivale-poster.png">
-                  </div>
-                </div>
-            </div>
-        </div>
-         <div id="portrait" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <img src="assets/portrait-graphic.png">
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 </body>
 
 <footer>
-    <div class="container-fluid footer">
-        <div class="col-sm-6 col-sm-offset-3">
-            <div class="row">
-                <div class="col-sm-8">
-                    <h5><a href="mailto:fangrace.k@gmail.com" class="highlight">Email</a></h5>
-                    <h5><a href="assets/Grace_Fan_Resume.pdf">Resume</a></h5>
-                    <h5><a href="https://www.linkedin.com/in/gracekfan/">LinkedIn</a></h5>
-                    <h5><a href="http://instagram.com/fangrace.k">Instagram</a></h5>
-                </div>
-                <div class="col-sm-3">
-                    <p>© Grace Fan 2018</p>
-                </div>
-            </div>
+<div class="container footer">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-2">
+            <a href="mailto:fangrace.k@gmail.com">Email</a>
+            <a href="assets/Grace_Fan_Resume.pdf">Resume</a>
+            <a href="https://www.linkedin.com/in/gracekfan/">LinkedIn</a>
         </div>
-    </div>  
-</footer>  
-
+        <div class="col-lg-2">
+            <p>© Grace Fan 2019</p>
+        </div>
+    </div>
+</div>  
+</footer>
 </html>
-
-
-
-
-
