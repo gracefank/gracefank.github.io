@@ -26,13 +26,32 @@ body {
 
 h1 {
 	font-size: 32px;
-		font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
+	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
 	font-weight: 600;
 }
 
 .row {
 	padding: 0;
 	margin: 0;
+}
+
+.content-list {
+	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
+	font-weight: 600;
+}
+
+.content-list li {
+	margin-bottom: 8px;
+}
+
+.content-list a {
+	color: #444;
+}
+
+.content-list a:hover {
+	text-decoration: none;
+	color: #939393;
+	border-bottom: 1px solid #939393;
 }
 
 .content-pg {
@@ -49,6 +68,56 @@ h1 {
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
 	font-weight: 600;
 	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.content-pg h5 {
+	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.content-pg h6 {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 5px;
+	display: block;
+}
+
+.content-pg img {
+	width: 100px;
+}
+
+.design-card {
+	border-radius: 2px;
+	padding: 25px;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #bbb;
+	color: #444;
+	overflow: wrap;
+	display: block;
+	line-height: 20px;
+	transition: 0.3s;
+}
+
+.design-card:hover {
+	background-color: #444;
+	color: #fff;
+	text-decoration: none;
+}
+
+.design-card h5 {
+	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
+	font-weight: 600;
+	color: #444;
+	text-align: center;
+}
+
+.design-card:hover h5 {
+	color: #fff;
 }
 
 .external-url {
@@ -84,6 +153,13 @@ h1 {
 	padding-bottom: 10px;
 }
 
+.font {
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+	padding: 10px;
+	border: 1px solid #bbb;
+	text-align: center;
+}
+
 .footer {
 	margin-top: 80px;
 	margin-bottom: 30px;
@@ -113,7 +189,7 @@ h1 {
 }
 
 .highlight {
-  background-image: linear-gradient(to right, transparent 50%, yellow 50%);
+  background-image: linear-gradient(to right, transparent 50%, #FFF784 50%);
   background-origin: 0;
   background-size: 200% 50%;
   background-repeat: repeat-x;
@@ -121,7 +197,6 @@ h1 {
   transition: background-position 0.3s; }
   .highlight:hover {
     background-position: -100% 100%; }
-
 
 .home-link {
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
@@ -137,7 +212,7 @@ h1 {
 }
 
 .illustration-img {
-	width: 100%;
+	width: 200px;
 }
 
 .illustration-row p {
@@ -183,6 +258,17 @@ h1 {
 	color: #939393;
 }
 
+.maya p {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.maya img {
+	width: 100%;
+	border-radius: 3px;
+}
+
 .navbar-cust {
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
 	font-weight: 600;
@@ -213,6 +299,12 @@ h1 {
 	color: #444;
 }
 
+.pill {
+	border-radius: 3px;
+	background-color: #FFF784;
+	padding: 0px 5px;
+}
+
 .project-card {
 	margin-bottom: 20px;
 }
@@ -229,9 +321,7 @@ h1 {
 
 .project-card h5 {
 	text-transform: uppercase;
-	background-color: #FFF784;
 	display: inline;
-	padding: 0px 5px;
 	font-size: 16px;
 }
 
