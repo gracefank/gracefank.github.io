@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+@import url(//db.onlinewebfonts.com/c/14bcfcf98e9d42ff3c30c88d332fd7d4?family=Avenir+Next+Demi+Bold);
+
+@font-face {
+  font-family: AvenirNext-Regular;
+  src: url(fonts/AvenirNext-Regular.tff);
+}
+
+@font-face {
+	font-family: "AvenirNext-DemiBold";
+    src: url("//db.onlinewebfonts.com/t/14bcfcf98e9d42ff3c30c88d332fd7d4.eot");
+    src: url("//db.onlinewebfonts.com/t/14bcfcf98e9d42ff3c30c88d332fd7d4.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/14bcfcf98e9d42ff3c30c88d332fd7d4.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/14bcfcf98e9d42ff3c30c88d332fd7d4.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/14bcfcf98e9d42ff3c30c88d332fd7d4.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/14bcfcf98e9d42ff3c30c88d332fd7d4.svg#Avenir Next Demi Bold") format("svg");
+}
+
+body {
+	font-family: AvenirNext-Regular, Arial, Sans-Serif;
+	color: #444444;
+	margin-bottom: 50px;
+}
+
+.content h1 {
+	margin: 50px 0;
+	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
+	font-weight: 700;
+}
+
+.content h2 {
+	margin-bottom: 20px;
+}
+
+.content img {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+.section-br {
+	border-top: 1px solid #DBDBDB;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
