@@ -87,8 +87,14 @@ h1 {
 }
 
 .content-pg img {
-	width: 100px;
+	width: 100%;
 }
+
+.colour-patches img {
+	width: 100px;
+	height: 100px;
+}
+
 
 .design-card {
 	width: 100%;
@@ -261,6 +267,12 @@ h1 {
 	height: 130px;
 }
 
+.img-sm {
+	margin: auto;
+	display: block;
+	width: 20% !important;
+}
+
 .intro {
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
 	font-weight: 600;
@@ -381,6 +393,16 @@ h1 {
 .project-card a img {
 	width: 12px;
 	margin-top: -5px;
+}
+
+.project-title {
+  background-image: linear-gradient(to right, transparent 50%, #FFF784 50%);
+  background-origin: 0;
+  background-size: 200% 60%;
+  background-repeat: repeat-x;
+  background-position: -100% 100%;
+  transition: background-position 0.3s;
+  display: inline;
 }
 
 .right-align {
