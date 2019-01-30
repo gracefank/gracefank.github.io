@@ -24,6 +24,18 @@ body {
 	margin-bottom: 50px;
 }
 
+.back-btn {
+	margin-top: 50px;
+}
+
+.back-btn a {
+	color: #777;
+}
+
+.back-btn a:hover {
+	color: #333;
+}
+
 .content h1 {
 	margin: 50px 0;
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
@@ -32,6 +44,22 @@ body {
 
 .content h2 {
 	margin-bottom: 20px;
+}
+
+.content a {
+	display: block;
+	border-bottom: 1px solid #ddd;
+	color: #333;
+	font-size: 20px;
+	padding: 20px;
+	transition: 0.3s;
+}
+
+.content a:hover {
+	color: #000;
+	text-decoration: none;
+	background-color: #dfdfdf;
+	transition: 0.3s;
 }
 
 .content img {
