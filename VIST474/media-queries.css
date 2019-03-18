@@ -1,0 +1,107 @@
+/********* Desktop Changes **********/
+
+@media screen and (max-width: 972px) {
+	#wrapper {
+		width: 95%;
+	}
+
+	/* content */
+	.content {
+		width: 60%;
+		padding: 6% 4% 3%;
+	}
+
+	/* sidebar */
+	.sidebar {
+		width: 30%;
+	}
+	.sidebar .sidebar-content {
+		padding: 8% 7%;
+		margin-bottom: 10px;
+	}
+}
+
+/********* tablet portrait (768px) **********/
+
+@media screen and (max-width: 768px) {
+
+	/* header */
+	#header {
+		height: auto;
+	}
+	.nav {
+		margin:0 auto;
+		list-style:none;
+		padding:0;
+		position: relative;
+		background-color: transparent;
+	}
+	.nav li {
+		display: block;
+		width: 98%;
+		text-align: center !important;
+		margin-bottom: 10px;
+		border: 2px solid white;
+	}
+	.nav li, .nav li a {
+		float:left;
+		clear:left;
+		text-decoration:none;
+		color:#000;
+	}
+	.nav li a {
+		padding: 15px 0px;
+		width: 100%;
+		font-size: 16px;
+		text-align: center;
+		color: white;
+	}
+
+	.nav li a:hover {
+		border: none;
+		background-color: #3D2423;
+	}
+	.site-title {
+		text-align: center;
+	}
+
+	/* content */
+	.content {
+		width: auto;
+		float: none;
+		margin: 20px 0;
+	}
+
+	/* sidebar */
+	.sidebar {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	.sidebar .sidebar-content {
+		padding: 3% 4% 3%;
+		margin: 0 0 20px;
+	}
+
+	.row {
+		display: block;
+	}
+
+	.column img {
+		width: 100%;
+	}
+
+}
+
+/********* iPhone 6/7/8 **********/
+
+@media screen and (max-width: 480px) {
+	.footer p {
+		float: left;
+		margin: 0;
+	}
+	html {
+		-webkit-text-size-adjust: none;
+	}
+}
+
