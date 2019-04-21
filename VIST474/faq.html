@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Save The Cake</title>
+    <link rel="stylesheet" href="style-main.css" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+</head>
+
+<body class="site">
+    <header class="masthead">
+        <a href="index.html" class="header-title">Save The Cake</a>
+        <nav id="navbar">
+            <ul>
+                <li><a href="about.html" class="nav-active">About</a>
+                    <ul>
+                        <li><a href="about.html">Our Cakes</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li> 
+                <li><a href="menu-featured.html">Menu</a>
+                     <ul>
+                        <li><a href="menu-featured.html">Featured</a></li>
+                        <li><a href="menu-custom.html">Custom</a></li>
+                    </ul>
+                </li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> <!-- end list -->
+        </nav> <!-- navbar -->
+    </header><!-- header -->
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+
+    <main id="content" class="main-area">
+        <section class="halves">
+            <div class="two-halves">
+                <button class="accordion">What do I need to bring for my consultation?</button>
+                <div class="panel">
+                  <p>
+                    Please come prepared. Bring 2 or 3 design choices. You may choose from our Portfolio (cake name and number) or any magazine photos, images from websites or your own sketches. Bring your color swatches (i.e. ribbon or paint chips) lace or wedding invitations. Anything you intend to incorporate into your cake we will need to see. If you choose to order with Carrie's Cakes you will need to be prepared to remit a $200.00 retainer which reserves our services and is non-refundable. We accept Visa, MasterCard, Cash and Check.
+                  </p>
+                </div> <!-- 1st accordion -->
+
+                <button class="accordion">How soon do I need to order my cake?</button>
+                <div class="panel">
+                  <p>
+                    We usually book 2-3 months before your wedding. May, June, and August fill quickly, so it's best to order as early as you can for these months. A $200 deposit will put you on our calendar. The balance is due one month before your wedding.
+                  </p>
+                </div> <!-- 2nd accordion -->
+
+                <button class="accordion">Why is your fondant better?</button>
+                <div class="panel">
+                  <p>
+                    We take the time and effort to make our own tasty fondant. It is soft and pliable when you cut it. There is never a bitter after-taste (as with other bakeries). We always ice the cake with buttercream before we cover it with a thin layer of fondant. That way you get the beauty of fondant, and the great taste of buttercream. We are happy to give you a sample.
+                  </p>
+                </div> <!-- 3rd accordion -->
+
+                <button class="accordion">What size cake will I need?</button>
+                <div class="panel">
+                  <p>
+                    That depends on how you will be using it. Will it be on display for most of the evening and cut toward the end? Will some of your guest have come and gone before you cut the cake? Usually a 3 tier cake will be enough to serve those who are there toward the end of the evening.
+                  </p>
+                </div> <!-- 4th accordion -->
+
+                <button class="accordion">What is included in your delivery fee and how much is delivery?</button>
+                <div class="panel">
+                  <p>
+                    We deliver and set up anywhere in the Greater Houston area. Our fee is based on distance and typically starts at $125. When your wedding cake is delivered, we send two members from our team, one of which is a master decorator to ensure that your cake looks picture perfect. We will also make sure to add any floral, based on your final design.
+                  </p>
+                </div> <!-- 5th accordion -->
+
+                <button class="accordion">What is your cancellation policy?</button>
+                <div class="panel">
+                  <p>
+                    Wedding orders must be cancelled 2 weeks prior to the event date. Any payments beyond the non-refundable deposit will be given as store credit. Cake orders cancelled after the 2-week cutoff date will not be refunded. In the event that something occurs to affect your scheduled wedding date, please contact us to discuss rescheduling options.
+                  </p>
+                </div> <!-- 6th accordion -->
+            </div> <!-- end of all accordions -->
+        </section>
+    </main>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+
+        for (var i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+
+    <footer class="footer">
+		<aside class="footer-contact">
+            <div class="contact">619.295.2253 | SAVETHECAKE@GMAIL.COM | 3085 REYNARD WAY, SD 92103</div>
+
+            <p>Our site’s fabulous header images and logo design were made by Grace Fan.</p>
+        </aside>
+        <aside class="sns">
+            <button><img src="assets/facebook-f.svg"></button>
+            <button><img src="assets/pinterest-p.svg"></button>
+            <button><img src="assets/yelp.svg"></button>
+        </aside>
+    </footer>
+
+</body>
+
+</html>
