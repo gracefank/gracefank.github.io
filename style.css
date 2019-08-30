@@ -146,18 +146,6 @@ h1 {
 	box-shadow: 0px 3px 5px #bbb;
 }
 
-@media only screen and (max-width: 600px) {
-	.design-card {
-	}
-	.design-card h5{
-		opacity: 1;
-	}
-	.design-card img {
-		opacity: 0.3;
-	}
-} 
-
-
 .external-url {
 	text-transform: uppercase;
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
@@ -206,6 +194,7 @@ h1 {
 
 .footer a {
 	text-transform: uppercase;
+	margin-left: 20px;
 	margin-right: 20px;
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
 	font-weight: 600;
@@ -226,6 +215,10 @@ h1 {
     text-align: right; 
 }
 
+.footer .center {
+	margin: auto;
+}
+
 .highlight {
   background-image: linear-gradient(to right, transparent 50%, #FFF784 50%);
   background-origin: 0;
@@ -242,7 +235,6 @@ h1 {
 	text-transform: uppercase;
 	padding: 30px 0px;
 	color: #444;
-	margin-left: 17px;
 }
 
 .home-link:hover {
@@ -320,9 +312,7 @@ h1 {
 	text-transform: uppercase;
 	padding: 30px 0px 10px;
 	margin-bottom: 30px;
-	position: fixed;
 	top: 0;
-	left: 0px;
 	width: 100%;
 	z-index: 2;
 	background: white;
@@ -336,7 +326,7 @@ h1 {
 
 .navbar-cust li a{
   color: #939393;
-  margin-left: 20px;
+  margin-left: 40px;
   display: inline;
 }
 
@@ -413,3 +403,21 @@ h1 {
 	border-top: 1px solid #DBDBDB;
 	margin-top: 70px;
 }
+
+
+@media only screen and (max-width: 768px) {
+	.navbar-cust li a{
+		margin-left: 0;
+		margin-right: 20px;
+	}
+	.design-card h5{
+		opacity: 1;
+	}
+	.design-card img {
+		opacity: 0.3;
+	}
+	.illustration-img {
+		display: none;
+	}
+} 
+
