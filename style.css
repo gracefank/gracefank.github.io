@@ -68,7 +68,7 @@ h1 {
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
 	font-weight: 600;
 	font-size: 20px;
-	margin-bottom: 20px;
+	margin: 40px 0 10px;
 }
 
 .content-pg h5 {
@@ -94,7 +94,6 @@ h1 {
 	width: 100px;
 	height: 100px;
 }
-
 
 .design-card {
 	width: 100%;
@@ -225,9 +224,20 @@ h1 {
   background-size: 200% 50%;
   background-repeat: repeat-x;
   background-position: 0 100%;
-  transition: background-position 0.3s; }
-  .highlight:hover {
-    background-position: -100% 100%; }
+  transition: background-position 0.3s; 
+}
+.highlight:hover {
+	background-position: -100% 100%; 
+}
+
+.highlight-static {
+	background-image: linear-gradient(to right, transparent 50%, #FFF784 50%);
+	background-origin: 0;
+	background-size: 200% 50%;
+	background-repeat: repeat-x;
+	background-position: -100% 100%; 
+	display: inline;
+  }
 
 .home-link {
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
@@ -272,6 +282,23 @@ h1 {
 	margin: 60px 0 25px;
 }
 
+.intro h1 {
+	display: inline;
+}
+
+.intro a {
+	float: right;
+	line-height: 50px;
+	text-transform: capitalize;
+	font-family: AvenirNext-Regular, Arial, Sans-Serif;
+	text-decoration: underline;
+	color: #232323;
+}
+.intro a:hover {
+	color: #777777;
+	transition: 0.3s;
+}
+
 .job-title {
 	padding-bottom: 25px;
 }
@@ -295,15 +322,30 @@ h1 {
 	color: #939393;
 }
 
-.maya p {
+.maya h5,h6 {
 	text-align: center;
-	font-size: 14px;
-	margin-top: 5px;
+}
+
+.maya h5 {
+	margin-top: 10px;
+	margin-bottom: 0;
 }
 
 .maya img {
-	width: 100%;
+	max-width: 100%;
+	max-height: 440px;
 	border-radius: 3px;
+	border: 1px solid #dddddd;
+	padding: 20px;
+}
+
+.no-hover {
+	color: #777777!important;
+}
+.no-hover:hover {
+	color: #777777!important;
+	text-decoration: none;
+	cursor: text;
 }
 
 .navbar-cust {
@@ -343,44 +385,44 @@ h1 {
 }
 
 .project-card {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
-.project-card h2 {
+.project-cards p {
+	margin: 10px 0 5px;
+}
+
+.project-cards h2 {
 	font-family: "Times New Roman", Times, serif;
 	font-weight: bold;
 	color: #444;
-	font-size: 42px;
-	margin-bottom: 25px;
-	line-height: 40px;
-	padding-top: 5px;
+	font-size: 32px;
+	line-height: 24px;
 }
 
-.project-card h5 {
+.project-cards h5 {
 	text-transform: uppercase;
 	display: inline;
 	font-size: 16px;
 }
 
-.project-card a {
+.project-cards a {
 	color: #444444;
-	text-transform: uppercase;
-	border-bottom: 2px solid #444;
 	font-family: AvenirNext-DemiBold, Arial, Sans-Serif;
-	font-weight: 600;
 }
 
-.project-card a:hover {
-	text-decoration: none;
+.project-cards a:hover {
 	color: #939393;
-	border-bottom: 2px solid #939393;
+	transition: 0.3s;
 }
 
-.project-card img {
-	width: 100%;
+.project-cards img {
+	max-width: 100%;
+	max-height: 140px;
+	border-radius: 5px;
 }
 
-.project-card a img {
+.project-cards a img {
 	width: 12px;
 	margin-top: -5px;
 }
@@ -401,7 +443,7 @@ h1 {
 
 .section-br {
 	border-top: 1px solid #DBDBDB;
-	margin-top: 70px;
+	margin-top: 30px;
 }
 
 
@@ -418,6 +460,13 @@ h1 {
 	}
 	.illustration-img {
 		display: none;
+	}
+	.d-none-sm {
+		display: none;
+	}
+	.maya img {
+		display: block;
+		margin: auto;
 	}
 } 
 
