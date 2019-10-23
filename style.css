@@ -219,8 +219,6 @@ h1 {
 	position: absolute;
 	bottom: 10px;
 	width: calc(100% - 52px);
-	opacity: 0;
-	visibility: hidden;
 }
 
 .illustration-card .illustration-caption h5 {
