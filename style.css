@@ -16,7 +16,7 @@ body {
 }
 
 .nav-bar {
-	padding: 2rem 0;
+	padding: 1rem 0 2rem;
 	margin-bottom: 4.25rem;
 }
 .nav-bar a {
@@ -40,13 +40,13 @@ body {
 .projects-header-section {
 	margin-bottom: 5rem;
 }
-.projects-header-section h1 {
+h1 {
 	font-size: 2rem;
 	font-weight: 600;
 	margin-bottom: 1.5rem;
 	max-width: 687px;
 }
-.projects-header-section h2 {
+h2 {
 	font-size: 1.2rem;
 	font-weight: 400;
 	color: #888888;
@@ -55,6 +55,9 @@ body {
 
 span.highlight {
 	color: #FE6E41;
+}
+span.bold {
+	font-weight: 700;
 }
 
 .projects-list-section {
@@ -79,8 +82,9 @@ span.highlight {
 .project-card h3 {
 	font-weight: 600;
 	font-size: 1rem;
-	margin: 0.25rem 0;
+	margin: 0.25rem 0 0;
 	color: #1F1A1A;
+	display: inline-block;
 }
 .project-card h4 {
 	font-weight: 400;
@@ -91,10 +95,10 @@ span.highlight {
 .project-card img {
 	width: 100%;
 }
-.project-card span.date {
+.project-card h3.date {
 	font-weight: 400;
 	color: #888888;
-	float: right;
+	float:right;
 }
 
 footer {
@@ -112,4 +116,84 @@ footer p {
 .footer-right a:hover {
 	opacity: 0.6;
 	transition: 0.3s;
+}
+
+.project-page-container {
+	margin: 0 27% 5rem;
+	max-width: 680px;
+}
+.project-page-container h1 {
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+.project-page-container h2 {
+	margin-bottom: 2.5rem;
+}
+.project-page-container p {
+	line-height: 1.6rem;
+}
+.project-page-container a {
+	color: #1F1A1A;
+	display: block;
+}
+.project-page-container img {
+	width: 100%;
+	margin: 1rem 0 2rem;
+}
+.project-page-header {
+	margin-bottom: 2.5rem;
+}
+.project-page-header p {
+	margin: 0 0 0.25rem;
+}
+.project-page-container h4 {
+	font-size: 1.25rem;
+	margin-bottom: 0.75rem;
+}
+
+
+@media only screen and (max-width: 1100px) {
+	.project-page-container {
+		margin: 0 14%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.projects-list-section > .project-card {
+		width: calc(50% - 1.5rem);
+		margin: 0.75rem;
+	}
+	.projects-header-section {
+		margin-bottom: 3rem;
+	}
+	.projects-list-section {
+		margin: 0 -0.75rem 1rem;
+	}
+	.project-card h3 {
+		font-size: 0.9rem;
+	}
+	.project-card h3.date {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.page-container,
+	.project-page-container {
+		margin: 0 5%;
+	}
+	.nav-bar {
+		margin-bottom: 2rem;
+	}
+	footer p {
+		font-size: 0.875rem;
+		display: block;
+	}
+	span.footer-right {
+		display: block;
+		float:left;
+	}
+	span.footer-right a {
+		margin: 0 2rem 0 0;
+	}
 }
