@@ -10,6 +10,10 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+span.color {
+	color: #FE6E41;
+}
+
 .page-container {
 	margin: 0 14%; 
 	max-width: 1024px;
@@ -54,7 +58,10 @@ h2 {
 }
 
 span.highlight {
-	color: #FE6E41;
+	background-color: #FFE8E1;
+	color: black;
+	border-radius: 0.25rem;
+	padding: 0 0.25rem;
 }
 span.bold {
 	font-weight: 700;
@@ -118,12 +125,12 @@ footer p {
 	transition: 0.3s;
 }
 
-.project-page-container {
+.project-page-container, 
+.about-me-container {
 	margin: 0 27% 5rem;
 	max-width: 680px;
 }
 .project-page-container h1 {
-	font-weight: 500;
 	margin-bottom: 1rem;
 }
 .project-page-container h2 {
@@ -146,14 +153,95 @@ footer p {
 .project-page-header p {
 	margin: 0 0 0.25rem;
 }
-.project-page-container h4 {
+.project-page-container h3 {
 	font-size: 1.25rem;
-	margin-bottom: 0.75rem;
+	margin: 3rem 0 0.5rem;
+}
+/* .project-page-container h3:before {
+	content: '\02022';
+	color: #FE6E41;
+	margin: 0 1rem 0 -2rem;
+} */
+.project-page-container h4 {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+	font-weight: 800;
+}
+.project-page-container p {
+	margin-bottom: 0.5rem;
+	color: #2F2B2B;
+}
+.project-page-container ul, 
+.project-page-container ol {
+	margin-top: 0;
+	color: #2F2B2B;
+	line-height: 1.6rem;
+}
+.process {
+	margin: -20px -25% 0;
+}
+
+.image-group img {
+	margin-top: 1.75rem;
+	margin-bottom: 0;
+	border-radius: 0.25rem;
+}
+.image-group img:first-of-type {
+	margin-top: 0;
+}
+
+.caption {
+	font-size: 0.875rem; 
+	color: #888;
+	margin: 0;
+	text-align: center;
+	font-style: italic;
+}
+
+.img-2 {
+	display: flex;
+}
+.img-2 > img {
+	width: 50%;
+}
+
+.about-me-container h1 {
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+.about-me-container p {
+	line-height: 1.75rem;
+	margin-bottom: 1.5rem;
+	color: #2F2B2B;
+}
+
+.lets-connect {
+	margin-bottom: 3rem;
+}
+.lets-connect a {
+	text-decoration: none;
+	color: #2F2B2B;
+	margin-right: 2rem;
+	padding-bottom: 0.25rem;
+	line-height: 1rem;
+	border-bottom: 4px solid #FFE8E1;
+	opacity: 0.8;
+}
+.lets-connect a:hover {
+	border-color: #FE6E41;
+	opacity: 1;
+	transition: 0.3s;
+}
+.lets-connect a img {
+	height: 20px;
+	margin-right: 0.5rem;
+	vertical-align: top;
 }
 
 
 @media only screen and (max-width: 1100px) {
-	.project-page-container {
+	.project-page-container,
+	.about-me-container {
 		margin: 0 14%;
 	}
 }
@@ -179,7 +267,8 @@ footer p {
 
 @media only screen and (max-width: 576px) {
 	.page-container,
-	.project-page-container {
+	.project-page-container,
+	.about-me-container {
 		margin: 0 5%;
 	}
 	.nav-bar {
@@ -195,5 +284,8 @@ footer p {
 	}
 	span.footer-right a {
 		margin: 0 2rem 0 0;
+	}
+	.process {
+		margin: -20px -10% 0;
 	}
 }

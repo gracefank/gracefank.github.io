@@ -22,23 +22,123 @@
     </div>
     <div class="project-page-container">
 		<section class="project-page-header">
-			<h1>Professor Evaluation Web App</h1>
-			<h2>A professor-course evaluation web application designed to increase quantity and quality of student feedback</h2>	
+			<h1>AC Filter Subscription Service</h1>
+			<h2>An AC filter subscription service to help private homeowners reduce property costs</h2>	
 
 			<p><span class="bold">Timeframe:</span> February to May 2020</p>
-			<p><span class="bold">Team:</span> Gabriel Britain, Grace Fan, Sibo Min, Sandesh Neupane, Sahil Palnitkar, Deshantar Parajuli </p>
-			<p><span class="bold">Skills:</span> Project management, user stories, user research, low to high fidelity prototyping</p>
-			<p><span class="bold">Tools:</span> Figma, HTML/CSS (Bootstrap, SASS)/JavaScript, Ruby on Rails</p>
+			<p><span class="bold">Team:</span> Jeremy Brown, Grace Fan, John Quach, Justin Rodriguez, Reuben Tadpatri, James Yun</p>
+			<p><span class="bold">Skills:</span> Product design, user stories, user research, low to high fidelity prototyping</p>
+			<p><span class="bold">Tools:</span> Figma, React, SASS, Flask</p>
 		</section> 
 		<section class="project-page-content">
-			<h4>My Role</h4>
-			<p>I worked with my team to develop user stories and low-fidelity prototypes and map out our product. I was in charge of designing high-fidelity prototypes and developing the front-end for the project. I also served as the scrum master and product owner, communicating with our customer, Professor Paul Taele.</p>
-		
-			<h4>Final Product</h4>
-			<a href="https://github.com/SaltyQuetzals/picachu/" target="_blank">Project Repository</a>
-			<img src="../assets/reploy-landing.png">
-		</section>
+			<h3>My Role</h3>
+			<p>I was in charge of developing a design system and high-fidelity prototypes for the project. I also helped conduct user studies, wrote user stories, and led the front-end development team.</p>
 
+			<h3>Project Context</h3>
+			<p> How can we increase the lifespan of AC units to reduce costs needed to maintain properties by private homeowners?</p>
+			<p> AC units require regular filter changes to preserve their lifespan. However, as temporary residents, tenants are less motivated to perform upkeep on their unit. 
+				Creating an online system to regularly deliver filters when needed will help ensure that filter replacement is performed on time.
+			</p>
+
+			<h3>Research</h3>
+			<h4>Primary Research & Findings</h4>
+			<ul>
+				<li>The two most expensive systems to replace are the roof and AC/HVAC systems</li>
+				<li>Costs to replace broken AC units fall entirely on the homeowner</li>
+				<li><span class="highlight">Only 50% of homeowners surveyed use online systems</span> to manage their properties</li>
+				<li><span class="highlight">Over 53% of tenants surveyed do not know how to change an air filter</span></li>
+			</ul>
+
+			<h4>Secondary Research</h4>
+			<ul>
+				<li>
+					Private homeowners typically budget about 4% of their property's value in annual maintenance costs or 50% of the rental property income.
+					<ul>
+						<li>For a $300k home, this is between <span class="highlight">$12k-$18k per year towards maintence costs</span></li>
+					</ul>
+				</li>
+				<li>Basic <span class="highlight">AC units cost between $3.6k to $6k to replace</span>, higher quality units can cost upwards of $12k</li>
+				<li>Common causes of AC failure include clogged air filters and lack of maintenance</li>
+			</ul>
+
+			<h3>Concept Development</h3>
+			<h4>Personas</h4>
+			<p>I created two personas to highlight some goals and pain points from homeowners and tenants, our primary users.</p>
+			<p><span class="highlight">Klaus</span>, a private homeowner for 10+ years</p>
+			<ul>
+				<li>Has no time to monitor all of the homes he rents out</li>
+				<li>Would like to reduce costs across all homes</li>
+				<li>Does not regularly contact his tenants</li>
+			</ul>
+
+			<p><span class="highlight">Manfred</span>, a college student renting from Klaus</p>
+			<ul>
+				<li>Has lived with his parents until moving for college</li>
+				<li>Does not know how to maintain a home</li>
+				<li>Rarely does chores because of his busy schedule</li>
+			</ul>
+
+			<h4>User Stories</h4>
+			<p>In addition to the personas, I developed user stories to guide the product concept and listed primary features needed for basic functionality.</p>
+			<ol>
+				<li>As a homeowner, I want to manage all my homes on a single platform</li>
+				<li>As a homeowner, I want to send each property different hardware</li>
+				<li>As a homeowner, I want to verify that my tenants have replaced their filter</li>
+				<li>As a homeowner, I want to have a purchase history for each home to record costs</li>
+			</ol>
+
+			<h3>Wireframing</h3>
+			<h4>User Flow Diagram</h4>
+			<img src="../assets/userflow-klaus.png">
+			<p class="caption">Different paths that the user can take when interacting with the application</p><br>
+
+			<h4>Low-fidelity Prototypes</h4>
+			<p>Each set of wireframes below illustrates one of the major user paths that can be taken.</p>
+
+			<div class="image-group">
+				<img src="../assets/wireframe-klaus1.png">
+				<p class="caption">Initially logging in, signing up for an account</p>
+	
+				<img src="../assets/wireframe-klaus2.png">
+				<p class="caption">Adding a new home to the account and purchasing a subscription</p>
+	
+				<img src="../assets/wireframe-klaus3.png">
+				<p class="caption">Viewing homes that have been added to the account</p>
+			</div>
+			
+			<h3>Visual Design</h3>
+			<h4>Component Library</h4>
+			<div class="img-2">
+				<img src="../assets/typography-klaus.png">
+				<img src="../assets/components-klaus.png">
+			</div>
+
+
+			<h4>High-fidelity Prototypes</h4>
+
+
+			<h3>Testing & Validation</h3>
+
+			<h4>Usability Tests</h4>
+			<p>Several of our users included positive comments about <span class="highlight">having a clean UI and wanting additional features</span>. Some direct quotes from these interviews can be found below:</p>
+			<ul>
+				<li>“It was a little unintuitive if you want to go through the steps out of order.”</li>
+				<li>“It is better [than current setup] because I will not have to go to the store when it is time to change air filters and I often forget to change them as often as I should anyways.”</li>
+				<li>“Could have text reminders or email alerts when it is time to change the filter.”</li>
+				<li>“I think a useful feature would be an unsubscribe or delay feature.“</li>
+			</ul>
+
+
+			<h4>Key Takeaways</h4>
+			<p> There is need to expand this application for both the benefit of homeowners and tenants. 
+				These additions should include shipping additional products outside of air filters and improving communication between the homeowner and their tenants.
+				The additional features requested by users during the interviews should be tested for future implementation to create a more holistic product that
+				helps homeowners reduce costs across their properties.
+			</p>
+			<p> For future projects, I would like to be able to test several ideas with users before commiting to a solution. 
+				<!-- Through this, we would be able to better identify  -->
+			</p>
+		</section>
     </div>
 </body>
 
