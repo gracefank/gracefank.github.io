@@ -1,0 +1,27 @@
+.prototypes-bg {
+    background-color: #E6F0FF;
+    margin: 0 -60%;
+}
+.prototypes-container {
+    margin: 0 27%;
+}
+.image-container {
+    width: 50%;
+    height: 240px;
+    margin: 1rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+.img1 {
+    background-image: url(assets/klaus-frames/add-new-home.png);
+}
+.img2 {
+    background-image: url(assets/klaus-frames/add-new-home1.png);
+}
+.img3 {
+    background-image: url(assets/klaus-frames/all-homes-view.png);
+}
+.img4 {
+    background-image: url(assets/klaus-frames/single-home-view.png);
+}

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="../assets/favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="../css/accordion.css">
 </head>
 
 <body>
@@ -22,34 +23,221 @@
     </div>
     <div class="project-page-container">
 		<section class="project-page-header">
-			<h1>Professor Evaluation Web App</h1>
+			<h1>Picachu Professor Evaluation App</h1>
 			<h2>A professor-course evaluation web application designed to increase quantity and quality of student feedback</h2>	
 
 			<p><span class="bold">Timeframe:</span> February to May 2020</p>
 			<p><span class="bold">Team:</span> Gabriel Britain, Grace Fan, Sibo Min, Sandesh Neupane, Sahil Palnitkar, Deshantar Parajuli </p>
-			<p><span class="bold">Skills:</span> Project management, user stories, user research, low to high fidelity prototyping</p>
+			<p><span class="bold">Skills:</span> Project management, user stories, user research, rapid prototyping</p>
 			<p><span class="bold">Tools:</span> Figma, HTML/CSS (Bootstrap, SASS)/JavaScript, Ruby on Rails</p>
 		</section> 
 
 		<section class="project-page-content">
 			<h4>My Role</h4>
-			<p>I worked with my team to develop user stories and low-fidelity prototypes to map out our product. I was in charge of designing high-fidelity prototypes and developing the front-end for the project. I also served as the scrum master and product owner, communicating with our customer, Professor Paul Taele.</p>
+			<p>I worked with my team to develop user stories and low-fidelity prototypes to map out our product. I was in charge of designing high-fidelity prototypes and developing the front-end for the project. I also served as the scrum master and product owner, communicating with our customer.</p>
 		
+			<h3>01 Problem Context</h3>
+			<p> At Texas A&amp;M University, students are asked to fill out PICA (Personalized Instructor/Course Appraisal System) evaluations at end of each semester
+				to provide feedback to professors on their course and instruction quality. Administration uses this feedback to allocate resources, funding, and determine if the course will continue to be offered.
+				However, the feedback rate among students is so low professors often offer incentives to motivate students fill out the form.
+				We want to understand why feedback rate is so low and create a system that encourages students to provide feedback.
+			</p>
+
 			<h4>Problem Statement</h4>
+			<p>How can we help professors increase the quantity and quality of feedback from students on the courses they instruct?</p>
 
 			<h4>Final Product</h4>
 			<a href="https://github.com/SaltyQuetzals/picachu/" target="_blank">Project Repository</a>
 		</section>
 
 		<section class="project-page-process">
-			<h4>Process</h4>
+			<h4>02 Process</h4>
 			<div class="process">
-				<img src="../assets/process-picachu.png">
+				<img src="../assets/picachu-frames/process-picachu.png">
 			</div>
-
 		</section>
 
-    </div>
+		<section class="project-page-content">
+			<h3>03 Research</h3>
+
+			<h4>Customer Interview</h4>
+			<p> Our primary customer and stakeholder in this project was Assistant Professor, Paul Taele. We asked him about the purpose of 
+				receiving student feedback, issues he saw with current methods of collecting feedback, and what he would like to see in a new system. 
+			</p>
+			<p>A quick summary of his points include:</p>
+			<ul>
+				<li>Only students with extreme views leave feedback (best vs worst class ever)</li>
+				<li>Questions designed for adminstration, not students</li>
+				<li>Students cannot access these reviews for reference later</li>
+			</ul>
+			<a href="https://drive.google.com/file/d/1TxYLLg0NtLLMAaBckGGPOvrLKT-A2gMQ/view?usp=sharing" target="_blank">Customer Interview Video</a>
+
+			<h4>User Interviews</h4>
+			<p>Things we wanted to understand about students: </p>
+			<ul>
+				<li>What motivates students to leave reviews for professors?</li>
+				<li>Knowing the benefits of leaving feedback, why don't students do it?</li>
+				<li>Should students have access to professor reviews?</li>
+				<li>Why do students look at reviews on external sites such as Rate My Professor?</li>
+			</ul>
+
+			<h4>Competitive Analysis</h4>
+			<p>After our customer interview, we looked into existing review sites and identified pros and cons for each.</p>
+			<table class="competitive-analysis">
+				<colgroup>
+					<col style="width:25%" />
+					<col />
+					<col />
+				</colgroup>
+				<tr>
+					<th>Website</th>
+					<th>Pros</th>
+					<th>Cons</th>
+				</tr>
+				<tr>
+					<td>PICA</td>
+					<td>
+						<ul>
+							<li>Feedback can be verified they are from students</li>
+							<li>Administration acts upon feedback provided</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Students cannot reference reviews for future classes</li>
+							<li>Questions are poorly designed for students</li>
+							<li>Low feedback rate by students</li>
+						</ul>						
+					</td>
+				</tr>
+				<tr>
+					<td>Rate My Professor</td>
+					<td>
+						<ul>
+							<li>Can vote on quality reviews vs poor reviews</li>
+							<li>Uses "Top Tags" to summarize a professor's rating</li>
+							<li>Questions tailored to students</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Reviews can be outdated or do not exist for a professor</li>
+							<li>Cannot easily compare professors for courses</li>
+							<li>Source of feedback cannot be verified</li>
+						</ul>						
+					</td>
+				</tr>
+				<tr>
+					<td>Koofers</td>
+					<td>
+						<ul>
+							<li>Shows all courses taught by a professor</li>
+							<li>Shows overall rating and GPA reported by students</li>
+							<li>Uses visual aids like graphs to illustrate trends</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Not as many reviews/not widely adapted by TAMU</li>
+							<li>Certain sections are locked from general access</li>
+						</ul>						
+					</td>
+				</tr>
+			</table>
+
+			<h3>04 Concept Development</h3>
+			<h4>User Stories</h4>
+			<p> Although our customers are professors, we decided that our primary users are students because they are the ones who need to provide feedback.
+				Therefore we compiled a series of user stories focused on the student.
+			</p>
+			<div class="accordion-container" id="userStories">	
+				<div class="accordion">
+					<h5 class="accordion-title">Search Functionality</h5>
+					<div class="accordion-content">
+						<ul>
+							<li>As a student, I should be able to search for reviews based on course so I can find reviews relevant to me.</li>
+							<li>As a student, I should be able to search all the professors for a specific course so I can compare their ratings.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="accordion">
+					<h5 class="accordion-title">Review Access</h5>
+					<div class="accordion-content">
+						<ul>
+							<li>As a student, I should be able to view professor evaluations from other students so I can get a better idea of how the professor teaches.</li>
+							<li>As a student, I should be able to use my TAMU Google account so I ensure the reviews are left by students.</li>
+							<li>As a student, I should only be able to view others' reviews after submitting a few of my own so I can sustain the review process.</li>
+						</ul>
+					</div>
+				</div>	
+				<div class="accordion">
+					<h5 class="accordion-title">Review Submission</h5>
+					<div class="accordion-content">
+						<ul>
+							<li>As a student, I should be able to submit a review for a professor for a specific class so other students can see my opinions.</li>
+							<li>As a student, I should be able to see visualized data like graphs and word clouds to get a fast impression of the professor/course.</li>
+							<li>As a student, I should be able to write anonymous reviews so that I can freely express my opinions without worrying about possible repercussions.</li>						
+						</ul>
+					</div>
+				</div>					
+				<div class="accordion">
+					<h5 class="accordion-title">Review Quality Control</h5>
+					<div class="accordion-content">
+						<ul>
+							<li>As a student, I should be able to see total numbers of reviews counted for grade average so I can ensure that single outliers grade are not affecting results.</li>
+							<li>As a user, I should be able to	report a review as offensive/harmful/irrelevant so I can make sure all reviews are high-quality.</li>
+							<li>As a user, I should be able to rate reviews so the users can moderate the reviews based on their quality and sincerity. </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h4>Sketches</h4>
+			<img src="../assets/picachu-sketches.png">
+			<p class="caption">Series of sketches to illustrate different user stories</p>
+
+			<h4>Site Mapping</h4>
+			<img src="../assets/picachu-frames/sitemap-picachu.png">
+			<p class="caption">Site map to guide different pages we want to include in our designs and development</p>
+			<h3>05 Product Features</h3>
+			<h4>Search Page</h4>
+			<img src="../assets/picachu-frames/search-page.png">
+			<p>
+				One design decision that deviated from the high-fidelity prototypes developed was combining the search bars on the search page.
+				Initially, there were two search bars, one for professors and one for students for easier code implementation, but eventually overruled
+				that decision for a better user experience.
+			</p>
+
+			<h4>Rating Reviews</h4>
+			<img src="../assets/picachu-frames/picachu-review.png">
+			<p>
+				Initially, we wanted to implement a ranking system to help sort quality reviews, but modified the idea to an upvote/downvote system.
+				This system is more familiar behavior and quicker for users vote than to choose a number to create a rating. 
+			</p>
+			<h4>Sustaining The Review Process</h4>
+			<img src="../assets/picachu-frames/page-locked.png">
+			<p>
+				To sustain the review process, we chose to lock users out of certain sections until they left their own review. While this is not,
+				an all-encompassing solution, it would help motivate students to leave a review.
+			</p>
+			
+			<h3>06 Testing & Validation</h3>
+			<h4>Final Customer Feedback</h4>
+
+			<h4>Next Steps</h4>
+			<p>
+				Our next steps would definitely be to test this prototype with students 
+			</p>
+
+			<h4>Takeaways</h4>
+			<p> 
+				It would have been nice to have time to conduct user studies with students to understand the problem better. I think we focused too much
+				on our customer and the implementation, although this project was completed for a software engineering course.
+			</p>
+		</section>
+	</div>
+	
+	<script type="text/javascript" src="../js/accordion.js"></script>
 </body>
 
 <footer class="page-container">

@@ -1,0 +1,23 @@
+.accordion-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 1rem 0.5rem;
+    border-top: 1px solid #ddd;
+    
+}
+.accordion-title:hover {
+    cursor: pointer;
+    background: #F6FAFF;
+    transition: 0.3s;
+}
+.accordion:last-of-type .accordion-content {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-content {
+    font-size: 0.875rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+}

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="../assets/favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="../klaus.css">
+	<script src="../js/modal.js"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     </div>
     <div class="project-page-container">
 		<section class="project-page-header">
-			<h1>AC Filter Subscription Service</h1>
+			<h1>Hammes Filter Subscription Service</h1>
 			<h2>An AC filter subscription service to help private homeowners reduce property costs</h2>	
 
 			<p><span class="bold">Timeframe:</span> February to May 2020</p>
@@ -34,13 +36,16 @@
 			<h3>My Role</h3>
 			<p>I was in charge of developing a design system and high-fidelity prototypes for the project. I also helped conduct user studies, wrote user stories, and led the front-end development team.</p>
 
-			<h3>Project Context</h3>
-			<p> How can we increase the lifespan of AC units to reduce costs needed to maintain properties by private homeowners?</p>
-			<p> AC units require regular filter changes to preserve their lifespan. However, as temporary residents, tenants are less motivated to perform upkeep on their unit. 
+			<h3>01 Project Context</h3>
+			<p> 
+				AC units require regular filter changes to preserve their lifespan. However, as temporary residents, tenants are less motivated to perform upkeep on their unit. 
 				Creating an online system to regularly deliver filters when needed will help ensure that filter replacement is performed on time.
 			</p>
+			<h4>Problem Statement</h4>
+			<p> How can we help private homeowners increase the lifespan of AC units to reduce costs to maintain their properties? </p>
 
-			<h3>Research</h3>
+
+			<h3>02 Research</h3>
 			<h4>Primary Research & Findings</h4>
 			<ul>
 				<li>The two most expensive systems to replace are the roof and AC/HVAC systems</li>
@@ -61,7 +66,7 @@
 				<li>Common causes of AC failure include clogged air filters and lack of maintenance</li>
 			</ul>
 
-			<h3>Concept Development</h3>
+			<h3>03 Concept Development</h3>
 			<h4>Personas</h4>
 			<p>I created two personas to highlight some goals and pain points from homeowners and tenants, our primary users.</p>
 			<p><span class="highlight">Klaus</span>, a private homeowner for 10+ years</p>
@@ -87,7 +92,7 @@
 				<li>As a homeowner, I want to have a purchase history for each home to record costs</li>
 			</ol>
 
-			<h3>Wireframing</h3>
+			<h3>04 Wireframing</h3>
 			<h4>User Flow Diagram</h4>
 			<img src="../assets/userflow-klaus.png">
 			<p class="caption">Different paths that the user can take when interacting with the application</p><br>
@@ -106,7 +111,7 @@
 				<p class="caption">Viewing homes that have been added to the account</p>
 			</div>
 			
-			<h3>Visual Design</h3>
+			<h3>05 Visual Design</h3>
 			<h4>Component Library</h4>
 			<div class="img-2">
 				<img src="../assets/typography-klaus.png">
@@ -115,12 +120,22 @@
 
 
 			<h4>High-fidelity Prototypes</h4>
+			<div class="prototypes-bg">
+				<div class="prototypes-container">
+					<div class="img-2">
+						<div class="image-container img1 img-interactive" id="img1" onclick="openModal()"></div>
+						<div class="image-container img2 img-interactive" id="img2"></div>				
+					</div>
+					<div class="img-2">
+						<div class="image-container img3 img-interactive" id="img3"></div>
+						<div class="image-container img4 img-interactive" id="img4"></div>
+					</div>
+				</div>
+			</div>
 
-
-			<h3>Testing & Validation</h3>
-
+			<h3>06 Testing & Validation</h3>
 			<h4>Usability Tests</h4>
-			<p>Several of our users included positive comments about <span class="highlight">having a clean UI and wanting additional features</span>. Some direct quotes from these interviews can be found below:</p>
+			<p>Several of our users included positive comments about <span class="highlight">having a clean UI, but wanting additional features</span>. Some direct quotes from these interviews can be found below:</p>
 			<ul>
 				<li>“It was a little unintuitive if you want to go through the steps out of order.”</li>
 				<li>“It is better [than current setup] because I will not have to go to the store when it is time to change air filters and I often forget to change them as often as I should anyways.”</li>
@@ -139,7 +154,13 @@
 				<!-- Through this, we would be able to better identify  -->
 			</p>
 		</section>
-    </div>
+	</div>
+	
+	<div class="modal" id="myModal">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<img src="../assets/klaus-frames/add-new-home.png" id="modalImg" class="modal-content">
+	</div>
+
 </body>
 
 <footer class="page-container">
