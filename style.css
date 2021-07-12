@@ -2,16 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-	color: #1F1A1A;
-	font-family: 'Nunito Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
-	/* animation: fadeInAnimation ease 1s;
-	animation-iteration-count: 1; 
-	animation-fill-mode: forwards;  */
-}
 @keyframes fadeInAnimation { 
 	0% { 
 		opacity: 0; 
@@ -20,6 +10,14 @@ body {
 		opacity: 1; 
 	 } 
 } 
+
+body {
+	color: #1F1A1A;
+	font-family: 'Nunito Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
 
 .disclaimer {
 	font-size: 0.875rem;
@@ -59,12 +57,22 @@ span.color {
 }
 
 .projects-header-section {
-	margin-bottom: 5rem;
+	margin-bottom: 6rem;
 }
+
+.projects-header-section .connect-icons a {
+	margin-right: 1.25rem;
+	opacity: 0.3;
+}
+.projects-header-section .connect-icons a:hover{
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
 h1 {
 	font-size: 2.5rem;
 	font-weight: 600;
-	margin-bottom: 1.5rem;
+	margin-bottom: 2rem;
 	max-width: 687px;
 }
 h2 {
@@ -91,9 +99,31 @@ span.bold {
 	margin: 0 -1.25rem 3.5rem;
 }
 
+.projects-header {
+	margin-bottom: 1rem;
+}
+.projects-header h3 {
+	display: inline-block;
+	margin: 0;
+	font-size: 1.5rem;
+}
+.projects-header a {
+	float: right;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #FE6E41;
+	opacity: 0.6;
+}
+.projects-header a:hover {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+
 .projects-list-section > .project-card {
 	width: calc(33.33% - 2.5rem);
 	margin: 1.25rem;
+	margin-bottom: 3rem;
 	text-decoration: none;
 	transition: transform .5s ease;
 }
@@ -135,7 +165,9 @@ footer p {
 	float: right;
 }
 .footer-right a {
-	margin-left: 2rem;
+	margin-left: 0.75rem;
+	color: #2F2B2B;
+	text-decoration: none;
 }
 .footer-right a:hover {
 	opacity: 0.6;
@@ -168,7 +200,9 @@ footer p {
 	margin-bottom: 2.5rem;
 }
 .project-page-header p {
-	margin: 0 0 0.25rem;
+	margin: 0;
+	line-height: 0.9rem;
+	font-size: 0.9rem;
 }
 .project-page-container h3 {
 	font-size: 1.25rem;
@@ -297,6 +331,9 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 1.5rem;
+	}
 	.page-container {
 		padding: 0 0.5rem;
 	}
@@ -307,6 +344,7 @@ footer p {
 	.projects-header-section {
 		margin-bottom: 3rem;
 	}
+
 	.projects-list-section {
 		margin: 0 -0.75rem 1rem;
 	}
@@ -319,6 +357,9 @@ footer p {
 }
 
 @media only screen and (max-width: 576px) {
+	.projects-header-section .connect-icons a img {
+		max-width: 20px; 
+	}
 	.project-page-container,
 	.about-me-container {
 		margin: 0 5%;
